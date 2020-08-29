@@ -6,7 +6,7 @@ class Hello extends React.Component {
                 <h2>Hello World!</h2>
                 <h3>Hello World!</h3>
             </div>
-            )
+        );
     }
 }
 
