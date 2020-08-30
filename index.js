@@ -24,4 +24,17 @@ class Team extends React.Component {
 //     );
 // }
 
+function getNum() {
+    return Math.floor(Math.random() * 10) + 1;
+}
+
+class NumPicker extends React.Component {
+    render() {
+        return(
+        <h2>Your number is: {getNum()}</h2>
+        )
+    }
+}
+
 ReactDOM.render(<Team/>, document.getElementById("root"))
+ReactDOM.render(<NumPicker/>, document.getElementById("root2"))
