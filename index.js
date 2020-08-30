@@ -31,11 +31,25 @@ function getNum() {
 class NumPicker extends React.Component {
     render() {
         const num = getNum();
+        let msg;
+
+        if(num === 7) {
+            msg = 
+            <div>
+                <h3>Congrats!</h3>
+                <img src="https://static.wikia.nocookie.net/cfa05b18-45bd-4281-8917-7450b60a6ca9" alt="Happy Spongebob" />
+            </div>
+        } else {
+            msg = 
+            <div>
+                <p>Unlucky... you need a 7</p>
+            </div>
+        }
 
         return(
         <div>
             <h2>Your number is: {num}</h2>
-            <p>{num === 7 ? "Congrats!" : "Unlucky..."}</p>
+            {msg}
         </div>
         );
     }
